@@ -1,0 +1,25 @@
+<div *ngIf="user && user.firstName">
+  <div class="profile-container">
+    <img
+      [src]="user.image"
+      alt="{{ user.firstName }} {{ user.lastName }}"
+      class="profile-image"
+    />
+    <h1>{{ user.firstName }} {{ user.lastName }}</h1>
+    <p><strong>Email:</strong> {{ user.email }}</p>
+    <p><strong>Phone:</strong> {{ user.phone }}</p>
+    <p>
+      <strong>Address:</strong>
+      {{ user.address?.address }}, {{ user.address?.city }},
+      {{ user.address?.state }}
+      {{ user.address?.postalCode }}
+    </p>
+    <p>
+      <strong>Company:</strong>
+      {{ user.company?.name }},
+      {{ user.company?.title }}
+    </p>
+    <p><strong>University:</strong> {{ user.university }}</p>
+    <p><strong>Role:</strong> {{ user.role }}</p>
+  </div>
+</div>

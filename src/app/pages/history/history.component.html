@@ -1,0 +1,13 @@
+<div class="container text-center">
+  <h2>History</h2>
+
+  <div *ngIf="allUsers.length > 0" class="results">
+    <h3>All users available</h3>
+    <small>Click any to view user profile</small>
+    <div *ngFor="let user of allUsers" class="result-row">
+      <p (click)="browseUser(user.id)">
+        {{ user.firstName }} {{ user.lastName }}
+      </p>
+    </div>
+  </div>
+</div>

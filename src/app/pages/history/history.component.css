@@ -1,0 +1,14 @@
+.container {
+  text-align: center;
+}
+.results {
+  margin-top: 40px;
+}
+
+.result-row {
+  padding: 0 10px;
+  border-bottom: 1px solid #ddd;
+}
+.result-row:hover {
+  cursor: pointer;
+}
